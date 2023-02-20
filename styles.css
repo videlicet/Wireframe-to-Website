@@ -19,11 +19,21 @@
     
 }
 
-.play-title {
+.play-link {
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: bold;
     color: white;
+    text-decoration: none;
     text-transform: uppercase;
+}
+
+.play-icon:hover,
+.play-icon:focus {
+    color: #1baeaa;
+}
+.play-link:hover,
+.play-link:focus {
+    color: #1baeaa;
 }
 
