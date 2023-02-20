@@ -1,35 +1,29 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav {
-    color: red;
-}
-
-#hero-section {
-    color: blue;
-}
-
-#our_story-section {
-    color: green;
-}
 
 #watch-section {
-    color: darkred;
+    height: 70vh;
+    background-image: url(images/bgk-middle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e1a3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
 }
 
-#expertise-section {
-    color: fuchsia;
+.play-title {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
-#team-section {
-    color: yellowgreen;
-}
-
-#contact_client-section {
-    color: lightsalmon;
-}
-
-footer {
-    color: blueviolet;
-}
