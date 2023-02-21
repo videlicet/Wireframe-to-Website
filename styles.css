@@ -34,8 +34,8 @@ body {
     margin-bottom: 2em;
 }
 
-.hr_small {
-    width: 3em;
+#team-section_container > hr {
+    width: 4em;
     margin: 10px auto 30px;
 }
 
@@ -71,6 +71,7 @@ body {
     display: flex;
     width: 960px;
     text-transform: uppercase;
+    gap: 3em;
 }
 
 #message_div > h2 {
@@ -124,13 +125,13 @@ button { /*button css suggestion*/
     text-transform: uppercase;
     padding: 10px 25px 10px 25px;
     margin:10px;
-
+}
 
 
 /*watch section*/
 
 #watch-section {
-    height: 70vh;
+    height: 35vh;
     background-image: url(images/bgk-middle.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +141,6 @@ button { /*button css suggestion*/
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    
 }
 
 .play-link {
@@ -170,6 +170,7 @@ button { /*button css suggestion*/
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-auto-columns: max-content;
@@ -200,7 +201,7 @@ button { /*button css suggestion*/
     font-weight: 400;
 }
 
-.line {
+.expertise-title > hr {
     width: 4rem;
 }
 
