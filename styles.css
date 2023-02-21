@@ -52,7 +52,7 @@ nav ul li a:hover {
     display: flex;
     align-items: top;
     justify-content: center;
-    background-image: url('bgk-header.png');
+    background-image: url('./images/bgk-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
