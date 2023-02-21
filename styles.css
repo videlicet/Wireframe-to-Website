@@ -1,8 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*team section*/
+
+#team-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/bgk-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+#team-section_container {
+    margin: auto;
+    width: 960px;
+}
+
+#team-section_members {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.hr_small {
+    width: 3em;
+    margin: 10px auto 30px;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    text-transform: uppercase;
+}
+
+.team_member_img {
+    width: 220px;
+}
+
+.team_position {
+    font-size: smaller;
+    color: lightgrey;
+}
+
+/*contact_client-section*/
+
+#contact_client-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#contact_client-section_container {
+    display: flex;
+    width: 960px;
+    text-transform: uppercase;
+}
+
+#message_div > h2 {
+    margin-left: 10px;
+    margin-bottom: 0.5em;
+}
+
+.contact_input {
+    width: 460px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#clients_div > h2 {
+    margin-left: 30px;
+    margin-bottom: 0.5em;
+}
+
+#clients_div_images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client_image {
+    object-fit:contain;
+    width: 35%;
+    height: 30px;
+    margin: 30px;
+}
+
+input {
+    font-family: 'Segoe UI';
+    font-size: 1em;
+}
+
+#your_message {
+    width: 462px; /*why is adding 2 px necessary to reach actual 460*/
+    height: 200px;
+    resize: none;
+    font-family: 'Segoe UI'; /*maybe superfluous*/
+    font-size: 1em;
+}
+
+button { /*button css suggestion*/
+    background-color: transparent;
+    border: 1px solid #1baeaa;
+    border-radius: 1px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: #1baeaa;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px;
+    margin:10px;
+
+
+
+/*watch section*/
 
 #watch-section {
     height: 70vh;
@@ -31,6 +156,8 @@
 .play-link:focus {
     color: #1baeaa;
 }
+
+/*expertise section*/
 
 #expertise-section {
     background: white;
@@ -102,3 +229,5 @@
     margin-bottom: 1rem;
     /* border-right: 0.2px solid #4d4d4d; */
 }
+
+/*footer*/
