@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 #watch-section {
     height: 70vh;
     background-image: url(images/bgk-middle.png);
@@ -28,12 +27,78 @@
     text-transform: uppercase;
 }
 
-.play-icon:hover,
-.play-icon:focus {
-    color: #1baeaa;
-}
 .play-link:hover,
 .play-link:focus {
     color: #1baeaa;
 }
 
+#expertise-section {
+    background: white;
+    color: #3b3b3b;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.8rem;
+}
+
+.expertise-container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-columns: max-content;
+    place-content: center;
+    gap: 1rem;
+    /* place-items: center; */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expertise-title {
+    grid-column: 1/-1;
+    margin: 70px 0 70px;
+}
+
+.title-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-norm {
+    font-weight: 400;
+}
+
+.line {
+    width: 4rem;
+}
+
+.card-img,
+.card-title,
+.card-content {
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    height: 50px;
+    width: 50px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.expertise-card {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    /* border-right: 0.2px solid #4d4d4d; */
+}
