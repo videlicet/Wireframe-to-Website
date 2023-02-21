@@ -1,7 +1,56 @@
 
-body{
+/*body{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo_top{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #1baeaa;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    height: 100%;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+nav li:hover{
+    color: #1baeaa;
+}
+nav ul a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#navbar_elements{
+    color: white;
+}
+
 #hero_s1{
     background-image: url('bgk-header.png');
     height: 100vh;
@@ -43,16 +92,184 @@ body{
     padding: 10px;
     padding-left: 15px;
 
-body {
-    display: flex;
-    flex-direction: column;
+
+
+/*our-story*/
+
+.story_main {
+    width: 50%;
+    margin: 0 auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    display: flex;
+    padding: 60px 0;
 }
+
+.container .our-story .logo {
+    margin: auto 80px auto 0;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.container .para {
+    padding: 10px 7px;
+    font-size: 1.1rem;
+}
+
+.story_main .container .button {
+    background-color: #fff;
+    float: left;
+}
+
+.story_main .btn {
+    color: #1baeaa;
+    border: 1px solid #1baeaa;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1600px) {
+    .container .our-story .logo {
+        margin: 45px 50px auto 0;
+    }
+
+    .container .our-story .logo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 2.2rem;
+        padding-bottom: 7px;
+    }
+
+    .container .para {
+        padding: 12px 5px;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .story_main .btn {
+        padding: 7px;
+        margin-top: 17px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container .our-story .logo {
+        margin: 45px 40px auto 0;
+    }
+
+    .container .our-story .logo img {
+        width: 148px;
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 2.1rem;
+        padding-bottom: 1px;
+    }
+
+    .container .para {
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .story_main .btn {
+        padding: 7px;
+        margin-top: 14px;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        display: grid;
+        padding: 0;
+    }
+
+    .story_main {
+        width: 100%;
+    }
+
+    .container .our-story {
+        margin: 27px auto;
+    }
+
+    .container .our-story .logo {
+        margin: 10px 20px;
+    }
+
+    .container .our-story .logo img {
+        width: 135px;
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        padding-bottom: 2px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container .para {
+        padding: 8px 25px;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .story_main .container .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .story_main .btn {
+        padding: 5px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width:480) {
+    .container .our-story {
+        margin: 22px auto;
+    }
+
+    .container .our-story .logo {
+        margin: 10px 15px;
+    }
+
+    .container .our-story .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        padding-bottom: 2px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container .para {
+        padding: 6px 20px;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .story_main .btn {
+        padding: 5px;
+        margin-top: 8px;
+    }
+}
+
+/*team section*/
 
 
 #team-section {
@@ -274,44 +491,4 @@ button { /*button css suggestion*/
     margin-bottom: 1rem;
     /* border-right: 0.2px solid #4d4d4d; */
 
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-#logo_top{
-    text-decoration: none;
-    font-size: 2rem;
-    color: #1baeaa;
-}
-nav ul{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-nav li{
-    height: 100%;
-    width: 150px;
-    text-align: center;
-    position: relative;
-    color: white;
-}
-nav li:hover{
-    color: #1baeaa;
-}
-nav ul a{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-#navbar_elements{
-    color: white;
 }
