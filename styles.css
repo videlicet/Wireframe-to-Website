@@ -38,6 +38,7 @@
     font-family: 'Segoe UI', sans-serif;
     font-size: 0.8rem;
 }
+
 .expertise-container {
     width: 80%;
     max-width: 960px;
@@ -81,17 +82,21 @@
 .card-content {
     margin-bottom: 1rem;
 }
+
 .card-img {
     height: 50px;
     width: 50px;
 }
+
 .card-content {
     text-align: center;
 }
+
 .card-title {
     font-weight: 600;
     font-size: 0.8rem;
 }
+
 .expertise-card {
     padding: 0 1rem;
     margin-bottom: 1rem;
