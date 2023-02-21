@@ -28,12 +28,15 @@ nav {
 }
 
 /*team section*/
+
 #team-section {
     display: flex;
     flex-direction: column;
     background-image: url('images/bgk-header.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 45vh;
     color: white;
     text-align: center;
     font-family: 'Segoe UI';
@@ -46,11 +49,12 @@ nav {
 
 #team-section_members {
     display: flex;
+    margin-bottom: 2em;
 }
 
 .hr_small {
-    width: 50px;
-    margin: 10px auto 10px;
+    width: 3em;
+    margin: 10px auto 30px;
 }
 
 .team_member {
@@ -74,18 +78,33 @@ nav {
 
 /*contact_client-section*/
 
+#contact_client-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
 #contact_client-section_container {
     display: flex;
     width: 960px;
-    margin: auto;
-    background-color:;
     text-transform: uppercase;
+}
+
+#message_div > h2 {
+    margin-left: 10px;
+    margin-bottom: 0.5em;
 }
 
 .contact_input {
     width: 460px;
     margin: 10px;
     padding: 10px;
+}
+
+#clients_div > h2 {
+    margin-left: 30px;
+    margin-bottom: 0.5em;
 }
 
 #clients_div_images {
@@ -102,13 +121,15 @@ nav {
 
 input {
     font-family: 'Segoe UI';
+    font-size: 1em;
 }
 
 #your_message {
     width: 462px; /*why is adding 2 px necessary to reach actual 460*/
     height: 200px;
-    font-family: 'Segoe UI'; /*maybe superfluous*/
     resize: none;
+    font-family: 'Segoe UI'; /*maybe superfluous*/
+    font-size: 1em;
 }
 
 button { /*button css suggestion*/
@@ -119,7 +140,7 @@ button { /*button css suggestion*/
     font-weight: bold;
     color: #1baeaa;
     text-transform: uppercase;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 25px 10px 25px;
     margin:10px;
 }
 
