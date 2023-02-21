@@ -1,13 +1,98 @@
-body {
+
+/*body{
+    height: 100%;
     display: flex;
     flex-direction: column;
-}
+}*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo_top{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #1baeaa;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    height: 100%;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+nav li:hover{
+    color: #1baeaa;
+}
+nav ul a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#navbar_elements{
+    color: white;
+}
+
+#hero_s1{
+    background-image: url('bgk-header.png');
+    height: 100vh;
+    width: 100%;
+}
+#forest{
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: fit-content;
+}
+#headline_hs{
+    font-size: 3rem;
+}
+#h_line{
+    border-bottom: 2px solid #1baeaa;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+#hero-section{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+#learn{
+    margin-top: 3rem;
+    background-color: transparent;
+    border: 1px solid #1baeaa;
+    border-radius: 1px;
+    font-family: 'Segoe UI';
+    color: #1baeaa;
+    padding: 10px;
+    padding-left: 15px;
+
+
 
 /*our-story*/
 
@@ -185,6 +270,7 @@ body {
 }
 
 /*team section*/
+
 
 #team-section {
     display: flex;
@@ -404,6 +490,5 @@ button { /*button css suggestion*/
     padding: 0 1rem;
     margin-bottom: 1rem;
     /* border-right: 0.2px solid #4d4d4d; */
-}
 
-/*footer*/
+}
