@@ -32,6 +32,8 @@ nav {
     display: flex;
     flex-direction: column;
     background-image: url('images/bgk-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     font-family: 'Segoe UI';
@@ -71,7 +73,7 @@ nav {
     display: flex;
     width: 960px;
     margin: auto;
-    background-color: red;
+    background-color:;
     text-transform: uppercase;
 }
 
