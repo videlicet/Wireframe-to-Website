@@ -47,8 +47,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/*hero section*/
-
 #hero_s1 {
     display: flex;
     align-items: top;
@@ -266,11 +264,15 @@ nav ul li a:hover {
 
 /*team section*/
 
+
 #team-section {
+    display: flex;
+    flex-direction: column;
     background-image: url('images/bgk-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 45vh;
     color: white;
     text-align: center;
     font-family: 'Segoe UI';
@@ -278,20 +280,11 @@ nav ul li a:hover {
 
 #team-section_container {
     margin: auto;
-    width: 80%;
-    max-width: 960px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    justify-content: center;
-    align-items: center;
+    width: 960px;
 }
 
 #team-section_members {
-    width: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-content: center;
+    display: flex;
     margin-bottom: 2em;
 }
 
@@ -303,8 +296,6 @@ nav ul li a:hover {
 .team_member {
     display: flex;
     flex-direction: column;
-    min-width: 100px;
-    max-width: 220px;
     margin: 10px;
     border: 1px;
     border-style: solid;
@@ -313,7 +304,7 @@ nav ul li a:hover {
 }
 
 .team_member_img {
-    width: 100%;
+    width: 220px;
 }
 
 .team_position {
@@ -327,14 +318,12 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50vh;
 }
 
 #contact_client-section_container {
     display: flex;
-    width: 80%;
-    max-width: 960px;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    width: 960px;
     text-transform: uppercase;
     gap: 3em;
 }
@@ -361,7 +350,7 @@ nav ul li a:hover {
 }
 
 .client_image {
-    object-fit: contain;
+    object-fit:contain;
     width: 35%;
     height: 30px;
     margin: 30px;
@@ -373,10 +362,10 @@ input {
 }
 
 #your_message {
-    width: 462px;
+    width: 462px; /*why is adding 2 px necessary to reach actual 460*/
     height: 200px;
     resize: none;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI'; /*maybe superfluous*/
     font-size: 1em;
 }
 
@@ -440,6 +429,7 @@ button { /*button css suggestion*/
     grid-auto-columns: max-content;
     place-content: center;
     gap: 1rem;
+    /* place-items: center; */
 }
 
 .center {
