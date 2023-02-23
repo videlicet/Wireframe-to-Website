@@ -439,7 +439,7 @@ button { /*button css suggestion*/
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-auto-columns: max-content;
     place-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .center {
@@ -489,9 +489,46 @@ button { /*button css suggestion*/
 }
 
 .expertise-card {
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    padding: 2rem;
+    /* margin-bottom: 1rem; */
 }
+
+.border {
+    border-bottom: 0.1px solid #5e5e5e;
+
+}
+
+.border:last-child {
+    border-bottom: none;
+}
+
+@media screen and (min-width:660px) 
+    and (max-width:987px) {
+    .border:nth-child(7),
+    .border:nth-child(6) {
+        border-bottom: none;
+    }
+    .border:nth-child(even) {
+        border-right: 0.1px solid #5e5e5e;
+    }
+}
+
+@media screen and (min-width:988px) {
+    .border:nth-child(5),
+    .border:nth-child(6),
+    .border:nth-child(7) {
+        border-bottom: none;
+    }
+    .border:nth-child(2),
+    .border:nth-child(3),
+    .border:nth-child(5),
+    .border:nth-child(6) {
+        border-right: 0.1px solid #5e5e5e;
+    }
+
+}
+    
+
     
 footer {
     display: flex;
