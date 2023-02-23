@@ -316,9 +316,15 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.team_position {
+.team_member_name {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.team_member_position {
+    margin-bottom: 2em;
     font-size: smaller;
-    color: lightgrey;
+    color: grey;
 }
 
 /*contact_client-section*/
