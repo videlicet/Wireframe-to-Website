@@ -428,8 +428,7 @@ button { /*button css suggestion*/
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-auto-columns: max-content;
     place-content: center;
-    gap: 1rem;
-    /* place-items: center; */
+    /* gap: 1rem; */
 }
 
 .center {
@@ -479,8 +478,13 @@ button { /*button css suggestion*/
 }
 
 .expertise-card {
-    padding: 0 1rem;
+    padding: 2rem;
     margin-bottom: 1rem;
+}
+
+.border {
+    border: red;
+
 }
     
 footer {
