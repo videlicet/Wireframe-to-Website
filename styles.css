@@ -1,3 +1,4 @@
+
 body {
     height: 100%;
     display: flex;
@@ -16,8 +17,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0px;
     width: 960px;
 }
 
@@ -47,6 +46,8 @@ nav ul li a:hover {
     color: white;
 }
 
+/*hero section*/
+
 #hero_s1 {
     display: flex;
     align-items: top;
@@ -55,7 +56,6 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 50vh;
 }
 
 #hero_s2 {
@@ -79,6 +79,8 @@ nav ul li a:hover {
     color: white;
     font-size: 1rem;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #hero-section > hr {
@@ -264,15 +266,11 @@ nav ul li a:hover {
 
 /*team section*/
 
-
 #team-section {
-    display: flex;
-    flex-direction: column;
     background-image: url('images/bgk-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 45vh;
     color: white;
     text-align: center;
     font-family: 'Segoe UI';
@@ -280,11 +278,20 @@ nav ul li a:hover {
 
 #team-section_container {
     margin: auto;
-    width: 960px;
+    width: 80%;
+    max-width: 960px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 #team-section_members {
-    display: flex;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
     margin-bottom: 2em;
 }
 
@@ -296,6 +303,8 @@ nav ul li a:hover {
 .team_member {
     display: flex;
     flex-direction: column;
+    min-width: 100px;
+    max-width: 220px;
     margin: 10px;
     border: 1px;
     border-style: solid;
@@ -304,7 +313,7 @@ nav ul li a:hover {
 }
 
 .team_member_img {
-    width: 220px;
+    width: 100%;
 }
 
 .team_position {
@@ -318,12 +327,14 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
 }
 
 #contact_client-section_container {
     display: flex;
-    width: 960px;
+    width: 80%;
+    max-width: 960px;
+    padding-top: 100px;
+    padding-bottom: 70px;
     text-transform: uppercase;
     gap: 3em;
 }
@@ -350,7 +361,7 @@ nav ul li a:hover {
 }
 
 .client_image {
-    object-fit:contain;
+    object-fit: contain;
     width: 35%;
     height: 30px;
     margin: 30px;
@@ -362,10 +373,10 @@ input {
 }
 
 #your_message {
-    width: 462px; /*why is adding 2 px necessary to reach actual 460*/
+    width: 462px;
     height: 200px;
     resize: none;
-    font-family: 'Segoe UI'; /*maybe superfluous*/
+    font-family: 'Segoe UI';
     font-size: 1em;
 }
 
@@ -601,3 +612,4 @@ a:visited {
     margin-bottom: 50px;
     font-weight: 400;
 }
+
